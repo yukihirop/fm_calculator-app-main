@@ -64,10 +64,6 @@ a {
   font-family: "League Spartan", sans-serif;
 }
 
-body {
-  bacground-color: var(--main-bg);
-}
-
 main {
   display: grid;
   height: 100vh;

@@ -5,7 +5,11 @@ declare module "@emotion/react" {
     colors: {
       bg: {
         primary: string;
-      }
+        toggle: string;
+      },
+      button: {
+        toggle: string;
+      },
       text: {
         primary: string;
       };
