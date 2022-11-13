@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
-import CalcHeader from 'components/card-header'
+import CalcHeader from 'components/calc-header'
+import CalcResult from 'components/calc-result'
 
 const CalcContainer = styled.main`
   width: 540px;
@@ -11,27 +12,11 @@ const CalcContainer = styled.main`
   flex-direction: column;
 `;
 
-const CalcResultContainer = styled.div`
-  margin-top: 2rem;
-  background-color: ${(props) => props.theme.colors.bg.result};
-  border-radius: .5rem;
-
-  h2 {
-    margin: 0;
-    padding: 2rem 1rem;
-    font-size: 3.5rem;
-    text-align: right;
-    color: ${props => props.theme.colors.text.primary};
-  }
-`
-
 function Home() {
   return (
     <CalcContainer>
       <CalcHeader />
-      <CalcResultContainer>
-        <h2>399,981</h2>
-      </CalcResultContainer>
+      <CalcResult result={"399,981"} />
     </CalcContainer>
   );
 }
