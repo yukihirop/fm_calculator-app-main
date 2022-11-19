@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import styled from '@emotion/styled'
-import { css } from '@emotion/react'
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "context/theme.context";
 
 const CalcHeaderContainer = styled.header`
   width: 100%;
@@ -81,7 +81,9 @@ const CalcThemeToggleCheck = styled.span`
 `;
 
 const CalcHeader = () => {
-  const ids = ['theme1', 'theme2', 'theme3'];
+  const ids = [1, 2, 3];
+  const { theme, setTheme } = useTheme();
+
   return (
     <CalcHeaderContainer>
       <CalcHeaderTitle>calc</CalcHeaderTitle>
@@ -96,8 +98,15 @@ const CalcHeader = () => {
         <h5>Theme</h5>
         <CalcThemeToggle>
           {ids.map((id, index) => (
-            <CalcThemeToggleLabel key={id}>
-              <CalcThemeToggleInput type="radio" name="theme" id={id} />
+            <CalcThemeToggleLabel key={`theme${id}`}>
+              <CalcThemeToggleInput
+                type="radio"
+                name="theme"
+                id={`theme${id}`}
+                value={`theme${theme}`}
+                checked={theme === id}
+                onChange={() => setTheme(id)}
+              />
               <CalcThemeToggleCheck />
             </CalcThemeToggleLabel>
           ))}
@@ -105,6 +114,6 @@ const CalcHeader = () => {
       </CalcThemePrefecture>
     </CalcHeaderContainer>
   );
-}
+};
 
-export default CalcHeader
+export default CalcHeader;
