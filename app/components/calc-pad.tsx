@@ -100,8 +100,9 @@ const CalcPad = () => {
           setBuffer(buffer / num);
           break;
         default:
-          result && setBuffer(num);
-          !result && setBuffer(10 * buffer + num);
+          const numVal = result ? num : 10 * buffer + num;
+          setBuffer(numVal);
+          setDisplay(numVal);
           break;
       }
     } else if (["result", "="].includes(key)) {
@@ -111,9 +112,7 @@ const CalcPad = () => {
       setDisplay(undefined);
     }
 
-    if (["+", "-", "x", "/", ".", "result", "=", "del"].includes(key)) {
-      setCurrentKey(key);
-    }
+    setCurrentKey(key);
   };
 
   return (
