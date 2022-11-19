@@ -13,6 +13,7 @@ const CalcResultContainer = styled.div`
     font-size: 3.5rem;
     text-align: right;
     color: ${(props) => props.theme.colors.text.primary};
+    height: 120px;
   }
 `;
 
