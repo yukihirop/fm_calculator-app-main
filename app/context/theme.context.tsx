@@ -24,7 +24,12 @@ const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
       <ThemeContext.Provider
         value={{
           theme: value,
-          setTheme: setValue,
+          setTheme: (value) => {
+            const classList = document.body.classList
+            document.body.classList.remove(classList.toString());
+            document.body.classList.add(`body_theme${value}`);
+            setValue(value);
+          },
         }}
       >
         {children}

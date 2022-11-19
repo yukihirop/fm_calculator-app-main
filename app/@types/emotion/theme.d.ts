@@ -19,6 +19,7 @@ declare module "@emotion/react" {
         numberShadow: string;
       };
       text: {
+        func: string
         primary: string;
         secondary: string;
       };

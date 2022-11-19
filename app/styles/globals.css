@@ -64,6 +64,18 @@ a {
   font-family: "League Spartan", sans-serif;
 }
 
+.body_theme1 {
+  background-color: var(--main-bg);
+}
+
+.body_theme2 {
+  background-color: var(--main-bg-2);
+}
+
+.body_theme3 {
+  background-color: var(--main-bg-3);
+}
+
 main {
   display: grid;
   height: 100vh;

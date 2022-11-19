@@ -11,7 +11,6 @@ const CalcHeaderContainer = styled.header`
   align-items: center;
   color: ${(props) => props.theme.colors.text.primary};
   position: relative;
-  border: 1px solid #000;
 `;
 const CalcHeaderTitle = styled.h1`
   font-size: 2rem;

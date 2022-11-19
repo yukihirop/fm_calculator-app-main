@@ -4,7 +4,6 @@ import CalcPad from 'components/calc-pad';
 
 const CalcContainer = styled.main`
   width: 496px;
-  border: 1px solid #000;
   margin: auto;
   display: flex;
   justify-content: center;

@@ -1,9 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { useTheme, css, ThemeProvider } from "@emotion/react";
-import { theme1 } from 'theme'
 
 const Document = () => {
-  const theme = useTheme();
   return (
     <Html lang="en">
       <Head>
@@ -19,11 +16,7 @@ const Document = () => {
           rel="stylesheet"
         />
       </Head>
-      <body
-        css={css`
-          background-color: ${theme.colors.bg.primary};
-        `}
-      >
+      <body className="body_theme1">
         <Main />
         <NextScript />
       </body>
@@ -31,10 +24,4 @@ const Document = () => {
   );
 };
 
-export default function WrappedDocument() {
-  return (
-    <ThemeProvider theme={theme1}>
-      <Document />
-    </ThemeProvider>
-  );
-}
+export default Document;

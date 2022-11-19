@@ -128,7 +128,7 @@ const CalcPad = () => {
               funcKey(key) &&
                 css`
                   background-color: ${theme.colors.button.func};
-                  color: ${theme.colors.text.primary};
+                  color: ${theme.colors.text.func};
                   box-shadow: 0 5px 0 ${theme.colors.button.funcShadow};
                 `,
               key === "=" &&
