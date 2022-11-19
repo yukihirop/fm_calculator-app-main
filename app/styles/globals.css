@@ -1,47 +1,10 @@
 :root {
   /* theme1 */
   --main-bg: hsl(222, 26%, 31%);
-  --toggle-bg: hsl(223, 31%, 20%);
-  --keypad-bg: hsl(223, 31%, 20%);
-  --screen-bg: hsl(224, 36%, 15%);
-  --key-bg: hsl(225, 21%, 49%);
-  --key-shadow: hsl(224, 28%, 35%);
-  --key-bg-red: hsl(6, 63%, 50%);
-  --key-toggle-red: hsl(6, 63%, 50%);
-  --key-shadow-red: hsl(6, 70%, 34%);
-  --key-bg-orange: hsl(30, 25%, 89%);
-  --key-shadow-orange: hsl(28, 16%, 65%);
-  --text: hsl(221, 14%, 31%);
-  --text-white: hsl(0, 0%, 100%);
   /* theme2 */
   --main-bg-2: hsl(0, 0%, 90%);
-  --toggle-bg-2: hsl(0, 5%, 81%);
-  --keypad-bg-2: hsl(0, 5%, 81%);
-  --screen-bg-2: hsl(0, 0%, 93%);
-  --key-bg-cyan-2: hsl(185, 42%, 37%);
-  --key-shadow-cyan-2: hsl(185, 58%, 25%);
-  --key-bg-orange-2: hsl(25, 98%, 40%);
-  --key-shadow-orange-2: hsl(25, 98%, 40%);
-  --key-bg-yellow-2: hsl(45, 7%, 89%);
-  --key-shadow-yellow-2: hsl(35, 11%, 61%);
-  --text-2: hsl(60, 10%, 19%);
-  --text-white-2: hsl(0, 0%, 100%);
   /* theme3 */
   --main-bg-3: hsl(268, 75%, 9%);
-  --toggle-bg-3: hsl(268, 71%, 12%);
-  --keypad-bg-3: hsl(268, 71%, 12%);
-  --screen-bg-3: hsl(268, 71%, 12%);
-  --key-bg-3: hsl(281, 89%, 26%);
-  --key-shadow-3: hsl(285, 91%, 52%);
-  --key-bg-cyan-3: hsl(176, 100%, 44%);
-  --key-toggle-cyan-3: hsl(176, 100%, 44%);
-  --key-shadow-cyan-3: hsl(177, 92%, 70%);
-  --key-bg-violet-3: hsl(268, 47%, 21%);
-  --key-shadow-violet-3: hsl(290, 70%, 36%);
-  --text-3: hsl(52, 100%, 62%);
-  --text-white-3: hsl(0, 0%, 100%);
-  --text-blue: hsl(198, 20%, 13%);
-  --font-size: 2rem;
 }
 
 html,
