@@ -3,7 +3,8 @@ import CalcHeader from "components/calc-header";
 import CalcPad from 'components/calc-pad';
 
 const CalcContainer = styled.main`
-  width: 496px;
+  max-width: 496px;
+  padding: .5rem;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -11,7 +12,6 @@ const CalcContainer = styled.main`
 `;
 
 function Home() {
-
   return (
     <CalcContainer>
       <CalcHeader />

@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { css, useTheme } from "@emotion/react";
 import CalcResult from "components/calc-result";
 import { useAppDispatch, calcSlice, useAppSelector } from "store";
+import { sm } from 'styles/media-query'
 
 const CalcPadContainer = styled.section`
   margin-top: 2rem;
@@ -11,10 +12,15 @@ const CalcPadContainer = styled.section`
   border-radius: 0.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 2rem;
-  padding: 2rem 2rem 0rem 2rem;
+  padding: 2rem;
   background-color: ${(props) => props.theme.colors.bg.keys};
+
+  ${sm} {
+    gap: 1rem;
+    padding: 1rem;
+  }
 `;
 const CalcKey = styled.button`
   height: 60px;

@@ -9,11 +9,13 @@ const CalcResultContainer = styled.div`
 
   h2 {
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
     font-size: 3.5rem;
     text-align: right;
+    line-height: 100px;
+    vertical-align: middle;
     color: ${(props) => props.theme.colors.text.primary};
-    height: 120px;
+    height: 100px;
   }
 `;
 
